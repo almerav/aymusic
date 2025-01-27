@@ -1,0 +1,90 @@
+.sidebar {
+    width: 20%; /* Slightly narrower to match your sample */
+    height: 100vh; /* Full height of the viewport */
+    background: #000000; /* Black background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fix sidebar to the left */
+    top: 0;
+    left: 0;
+    padding: 1rem 0; /* Adjust padding for better spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+.sidebar-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center; /* Center the title */
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the list stretches to the sidebar's width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center links horizontally */
+}
+
+li {
+    margin: 1rem 0; /* Add space between each item */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Adjust font size */
+    width: 100%; /* Full width for better alignment */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 0 45px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.new-playlist {
+    width: 100%; /* Ensure it stretches the sidebar width */
+    text-align: center;
+
+    position: relative;
+}
+
+.new-playlist::before {
+    content: ""; /* Adds the horizontal line */
+    display: block;
+    width: 80%; /* Adjust the width of the line */
+    height: 1px; /* Thickness of the line */
+    background-color: rgba(255, 255, 255, 0.5); /* Light gray line */
+    margin: 10px auto; /* Spacing above the line */
+}
+  
+.new-playlist-button {
+    background-color: pink;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.new-playlist-button:hover {
+    background-color: #ff9999;
+}

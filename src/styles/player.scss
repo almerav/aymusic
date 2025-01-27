@@ -1,0 +1,108 @@
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #b392ff, #ff90c7);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.song-details {
+    margin-bottom: 1rem;
+}
+
+.song-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.song-details p {
+    margin: 0;
+    font-size: 1rem;
+    color: #f7eaff;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+    .cover-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.control-btn:hover {
+    transform: scale(1.2);
+    color: #ffe4f7;
+}
+
+.time-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.time-control p {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.time-control input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+    background: #666; /* Default background */
+    transition: background 0.3s ease; /* Smooth transition */
+  }
+  
+  .time-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(255, 84, 212);
+    cursor: pointer;
+  }
+  
+  .time-control input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;    
+  }
+  
