@@ -4,7 +4,7 @@ import Player from "./components/PlayerSong";
 import Nav from "./components/Navb";
 import Explore from "./components/Explore";
 import Library from "./components/Library";
-import FooterPlayer from "./components/FooterPlayer";
+import FooterPlayer from "./components/footerPlayer";
 import "./styles/app.scss";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       id: "2",
       name: "Shape of You",
       artist: "Ed Sheeran",
-      audio: "/audio/ey.mp3",
+      audio: "/audio/shape_of_you.mp3",
       image: "/img/shape_of_you.png",
       duration: "4:23",
     },
@@ -30,10 +30,27 @@ function App() {
       id: "3",
       name: "Love Story",
       artist: "Taylor Swift",
-      audio: "/audio/ey.mp3",
+      audio: "/audio/love_story.mp3",
       image: "/img/taylor.jpg",
-      duration: "3:55",
+      duration: "4:23",
     },
+    {
+      id: "4",
+      name: "Whiplash",
+      artist: "Aespa",
+      audio: "/audio/whiplash.mp3",
+      image: "/img/aespa.jpg",
+      duration: "3:10",
+    },
+    {
+      id: "5",
+      name: "Hit Me Where The Heart Is",
+      artist: "Mega Simone",
+      audio: "/audio/Hitmewheretheheartis.mp3",
+      image: "/img/Mega.jpg",
+      duration: "3:32",
+    },
+
   ]);
 
   const [currentSong, setCurrentSong] = useState(songs[0]);
