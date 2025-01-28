@@ -4,7 +4,7 @@ import Player from "./components/PlayerSong";
 import Nav from "./components/Navb";
 import Explore from "./components/Explore";
 import Library from "./components/Library";
-import FooterPlayer from "./components/footerPlayer";
+import FooterPlayer from "./components/FooterPlayer";
 import "./styles/app.scss";
 
 function App() {
